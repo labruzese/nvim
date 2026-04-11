@@ -33,6 +33,14 @@
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "git@github.com:nvim-lua/plenary.nvim"
     },
+    "telescope-fzf-native.nvim": {
+      "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",
+      "src": "git@github.com:nvim-telescope/telescope-fzf-native.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "f7c673b8e46e8f233ff581d3624a517d33a7e264",
+      "src": "git@github.com:nvim-telescope/telescope.nvim"
+    },
     "undotree": {
       "rev": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d",
       "src": "git@github.com:mbbill/undotree"
