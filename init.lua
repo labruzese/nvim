@@ -12,3 +12,4 @@ vim.g.rustfmt_emit_files = 1
 
 require('lsp')
 require('plugins')
+require('statusline')

@@ -1,6 +1,6 @@
 local nt = require('nvim-treesitter')
 
-local ignored = { qf = true, oil = true, oil_preview = true}
+local ignored = { qf = true, oil = true, oil_preview = true, harpoon = true}
 
 vim.api.nvim_create_autocmd('FileType', {
 	callback = function(ev)
