@@ -35,11 +35,19 @@ vim.lsp.config['hls'] = {
 	root_markers = { { 'hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml' }, '.git' },
 }
 
+vim.lsp.config['kotlin-lsp'] = {
+	cmd = { 'kotlin-lsp', '--stdio' },
+	filetypes = { 'kotlin' },
+	root_markers = { { 'build.gradle', 'pom.xml', 'build.gradle.kts' }, '.git' },
+}
+
+
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('rust-analyzer')
 vim.lsp.enable('clangd')
 vim.lsp.enable('ocamllsp')
 vim.lsp.enable('hls')
+vim.lsp.enable('kotlin-lsp')
 
 vim.cmd [[set completeopt+=menuone,noselect,popup]]
 vim.api.nvim_create_autocmd('LspAttach', {
