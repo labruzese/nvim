@@ -10,6 +10,7 @@ vim.o.shiftwidth = 4
 vim.o.winborder = 'rounded'
 
 vim.g.rustfmt_emit_files = 1
+vim.g.rustfmt_command = "rustup run nightly rustfmt"
 
 require('lsp')
 require('plugins')
