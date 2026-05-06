@@ -41,6 +41,18 @@ vim.lsp.config['kotlin-lsp'] = {
 	root_markers = { { 'build.gradle', 'pom.xml', 'build.gradle.kts' }, '.git' },
 }
 
+vim.lsp.config['zls'] = {
+	cmd = { 'zls' },
+	filetypes = { 'zig' },
+	root_markers = { { 'build.zig', 'build.zig.zon' }, '.git' },
+}
+
+vim.lsp.config['pyright'] = {
+	cmd = { 'pyright-langserver', '--stdio' },
+	filetypes = { 'python' },
+	root_markers = { '.git' }
+}
+
 
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('rust-analyzer')
@@ -48,6 +60,8 @@ vim.lsp.enable('clangd')
 vim.lsp.enable('ocamllsp')
 vim.lsp.enable('hls')
 vim.lsp.enable('kotlin-lsp')
+vim.lsp.enable('zls')
+vim.lsp.enable('pyright')
 
 vim.cmd [[set completeopt+=menuone,noselect,popup]]
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -64,3 +78,4 @@ vim.keymap.set('i', '<c-space>', function()
 end)
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.setqflist)
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
