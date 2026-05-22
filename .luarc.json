@@ -5,7 +5,7 @@
 	"workspace": {
 		"library": [
 			"$VIMRUNTIME/lua",
-			"~./local/share/nvim12/pack/core/opt"
+			"~/.local/share/nvim/pack/core/opt"
 		]
 	}
 }
