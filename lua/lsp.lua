@@ -79,3 +79,4 @@ end)
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.setqflist)
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
